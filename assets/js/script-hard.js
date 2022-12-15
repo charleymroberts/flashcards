@@ -11,6 +11,13 @@ let fruitDictionary = [
     {lang1: "raisin", lang2: "le raisin sec"},
 ]
 
+let language = "French"
+document.getElementById('language').textContent = language;
+let gameTitle = "fruits"
+document.getElementById('game-title').textContent = gameTitle;
+let gameMode = "hard"
+document.getElementById('game-mode').textContent = gameMode;
+
 let wordPair;
 let question;
 
@@ -68,3 +75,4 @@ function gameOver() {
     document.getElementById('current-question-number').textContent = totalQuestions;
     displayQuestion();
 }
+
