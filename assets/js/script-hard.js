@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let score = 0;
 let questionNumber = 1;
+let totalQuestions = 10;
 
 function checkAnswer() {
     let userInput = document.getElementById('user-answer').value;
@@ -49,5 +50,21 @@ function checkAnswer() {
     }
     questionNumber += 1;
     document.getElementById('current-question-number').textContent = questionNumber;
+    document.getElementById('user-answer').value = "";
+
+    if (questionNumber === (totalQuestions + 1)) {
+        gameOver();
+    }
+
+    displayQuestion();
+}
+
+function gameOver() {
+    alert(`Game over! You answered ${score} questions correctly`);
+    alert('0-3: bof, 4-6: pas mal, 7-9: tres bien, 10: magnifique!');
+    score = 0;
+    document.getElementById('correct-answers').textContent = score;
+    totalQuestions = 1;
+    document.getElementById('current-question-number').textContent = totalQuestions;
     displayQuestion();
 }
