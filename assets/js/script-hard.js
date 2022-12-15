@@ -33,14 +33,21 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 )
 
+let score = 0;
+let questionNumber = 1;
+
 function checkAnswer() {
     let userInput = document.getElementById('user-answer').value;
     let userInputLowerCase = userInput.toLowerCase();
     let rightAnswer = wordPair.lang1;
     if (String(userInputLowerCase) === String(rightAnswer)) {
         alert("Yay, you got it right");
+        score += 1;
+        document.getElementById('correct-answers').textContent = score;
     } else {
         alert(`You said ${userInput}. The computer said... ${rightAnswer}.`);
     }
+    questionNumber += 1;
+    document.getElementById('current-question-number').textContent = questionNumber;
     displayQuestion();
 }
