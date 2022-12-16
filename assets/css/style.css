@@ -2,8 +2,8 @@
 
 body {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    background-color: blue;
-    background-image: url('../../assets/images/flag-of-france.jpg');
+    background-color: royalblue;
+    background-image: url('../../assets/images/flag-triangles.png');
     background-size: cover;
 }
 
@@ -19,6 +19,15 @@ body {
 h1 {
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
     text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0.5rem;
 }
 
 #question-text {
@@ -58,9 +67,11 @@ h1 {
     color: #000
  }
 
- #game-info {
-    background-color: #3A74F2;
-    padding: 0.5rem;
+ #game-info { 
+    text-align: left;
+    font-family: 'Secular One', 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+    margin-top: 0;
  }
 
  #submit {
@@ -77,6 +88,13 @@ h1 {
  #score-area p {
     font-family: 'Secular One', 'Times New Roman', Times, serif; 
  }
+
+ /* @media screen and (min-width: 800px) {
+    body {
+        background-image: url('../../assets/images/france-flag.jpeg');
+        background-size: cover;
+    }
+ } */
   
  @media screen and (min-width: 900px) {
     
