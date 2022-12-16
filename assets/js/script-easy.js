@@ -43,6 +43,7 @@ runMultipleChoice();
 
 let score = 0;
 let questionsAsked = 1;
+let questionsInTotal = 10;
 
 function checkAnswer() {
     let userInput = this.textContent;
@@ -57,11 +58,24 @@ function checkAnswer() {
 
     questionsAsked += 1;
     document.getElementById('current-question-number').textContent = questionsAsked;
-    
+
+    if (questionsAsked > (questionsInTotal)) {
+        gameOver();
+    }
+
     runMultipleChoice()
 }
 
 let answerButtons = document.getElementsByClassName('answer-button');
 for (let ansbutton of answerButtons) {
     ansbutton.addEventListener('click', checkAnswer);
+}
+
+function gameOver() {
+    alert(`Game over! You answered ${score} questions correctly`);
+    score = 0;
+    document.getElementById('correct-answers').textContent = score;
+    questionsAsked = 1;
+    document.getElementById('current-question-number').textContent = questionsAsked;
+    runMultipleChoice();
 }
