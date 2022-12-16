@@ -41,15 +41,23 @@ function runMultipleChoice() {
 
 runMultipleChoice();
 
+let score = 0;
+let questionsAsked = 1;
+
 function checkAnswer() {
     let userInput = this.textContent;
     let rightAnswer = fourChoices[questionPair].lang1;
     if (String(userInput) === String(rightAnswer)) {
+        score += 1;
+        document.getElementById('correct-answers').textContent = score;
         alert("Yay, you got it right");
     } else {
         alert(`You said ${userInput}. The computer said... ${rightAnswer}.`);
     }
 
+    questionsAsked += 1;
+    document.getElementById('current-question-number').textContent = questionsAsked;
+    
     runMultipleChoice()
 }
 
