@@ -5,6 +5,7 @@ body {
     background-color: royalblue;
     background-image: url('../../assets/images/flag-triangles.png');
     background-size: cover;
+    background-position: center;
 }
 
 #game-area {
