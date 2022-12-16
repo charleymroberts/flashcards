@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
     <title>Flashcards | Multiple choice</title>
 </head>
 <body>
     <div id="heading">
-        <h1>Flash⇔cards</h1>
+        <h1><a href="index.html">Flash⇔cards</a></h1>
     </div>
 
     <div id="game-area">
-        <div id="question-area">
-            <p>Which fruit is this? Select the correct answer below</p>
+        <div>
+            <p>Which fruit is this?</p>
         </div>
     
         <div id="question-text">
         </div>
     
+        <div>
+            <p>Select the correct answer:</p>
+        </div>
+
         <div id="answer-button-area">
             <button class="answer-button" id="answer1"></button>
             <button class="answer-button" id="answer2"></button>
@@ -26,16 +31,21 @@
             <button class="answer-button" id="answer4"></button>
         </div>
     
-        <br>
         <div id="score-area">
+            <p>Current question: <span id="current-question-number">1</span> out of <span id="total"></span></p>
             <p>Correct answers: <span id="correct-answers">0</span></p>
-            <p>Current question: <span id="current-question-number">1</span> out of 10</p>
         </div>
 
-        <div id="game-info">
-            Language: <span id="language"></span> |
-            Game: <span id="game-title"></span> |
-            Mode: <span id="game-mode"></span>
+        <!-- <div id="game-info">
+            <p>Game info:</p>
+            ✮ Language: <span id="language"></span> ✮
+            Game: <span id="game-title"></span> ✮
+            Mode: <span id="game-mode"></span> ✮
+        </div> -->
+
+        <div id="nav-buttons">
+            <a href="hardmode.html"><button class="nav-button">Switch to hard mode</button>
+            <a href="index.html"><button class="nav-button">Exit game</button></a>
         </div>
         
     </div>    

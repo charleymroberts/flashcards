@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&family=Secular+One&display=swap');
+
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    background-color: blue;
+    background-image: url('../../assets/images/flag-of-france.jpg');
+    background-size: cover;
+}
+
+#game-area {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 3px 3px #cdd2d4;
+}
+
+h1 {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#question-text {
+    font-family: 'Secular One', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.answer-button {
+    background-color: #EF6565;
+    width: 7rem;
+    height: 5rem;
+    border-radius: 5%;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 0.2rem;
+    font-size: 1.2rem;
+    font-family: 'Secular One', 'Times New Roman', Times, serif; 
+}
+
+ #nav-buttons {
+    margin-top: 2rem;
+    text-align: center;
+ }
+
+ .nav-button {
+    height: 2rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+ }
+
+ #submit {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+ }
+
+ a {
+    text-decoration: none;
+    color: #000
+ }
+
+ #game-info {
+    background-color: #3A74F2;
+    padding: 0.5rem;
+ }
+
+ #submit {
+    border-radius: 50%;
+    border: 0.5px solid black;
+    height: 1.5rem;
+    width: 1.5rem;
+ }
+
+#score-area {
+    margin-top: 2rem;
+}
+
+ #score-area p {
+    font-family: 'Secular One', 'Times New Roman', Times, serif; 
+ }
+  
+ @media screen and (min-width: 900px) {
+    
+#game-area {
+        width: 50%;
+    }   
+
+ }

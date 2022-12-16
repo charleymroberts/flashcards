@@ -11,12 +11,12 @@ let fruitDictionary = [
     {lang1: "raisin", lang2: "le raisin sec"},
 ]
 
-let language = "French"
-document.getElementById('language').textContent = language;
-let gameTitle = "fruits"
-document.getElementById('game-title').textContent = gameTitle;
-let gameMode = "hard"
-document.getElementById('game-mode').textContent = gameMode;
+// let language = "French"
+// document.getElementById('language').textContent = language;
+// let gameTitle = "fruits"
+// document.getElementById('game-title').textContent = gameTitle;
+// let gameMode = "hard"
+// document.getElementById('game-mode').textContent = gameMode;
 
 let wordPair;
 let question;
@@ -42,7 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let score = 0;
 let questionNumber = 1;
-let totalQuestions = 10;
+let questionsInTotal = 10;
+
+document.getElementById('total').textContent = questionsInTotal;
 
 function checkAnswer() {
     let userInput = document.getElementById('user-answer').value;
@@ -58,8 +60,9 @@ function checkAnswer() {
     questionNumber += 1;
     document.getElementById('current-question-number').textContent = questionNumber;
     document.getElementById('user-answer').value = "";
+    document.getElementById('user-answer').focus();
 
-    if (questionNumber === (totalQuestions + 1)) {
+    if (questionNumber > (questionsInTotal)) {
         gameOver();
     }
 
@@ -71,8 +74,8 @@ function gameOver() {
     alert('0-3: bof, 4-6: pas mal, 7-9: tres bien, 10: magnifique!');
     score = 0;
     document.getElementById('correct-answers').textContent = score;
-    totalQuestions = 1;
-    document.getElementById('current-question-number').textContent = totalQuestions;
+    questionsInTotal = 1;
+    document.getElementById('current-question-number').textContent = questionsInTotal;
     displayQuestion();
 }
 

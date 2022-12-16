@@ -11,12 +11,12 @@ let fruitDictionary = [
     {lang1: "raisin", lang2: "le raisin sec"},
 ]
 
-let language = "French"
-document.getElementById('language').textContent = language;
-let gameTitle = "fruits"
-document.getElementById('game-title').textContent = gameTitle;
-let gameMode = "easy"
-document.getElementById('game-mode').textContent = gameMode;
+// let language = "French"
+// document.getElementById('language').textContent = language;
+// let gameTitle = "fruits"
+// document.getElementById('game-title').textContent = gameTitle;
+// let gameMode = "easy"
+// document.getElementById('game-mode').textContent = gameMode;
 
 let fourChoices = [];
 let questionPair;
@@ -51,6 +51,8 @@ runMultipleChoice();
 let score = 0;
 let questionsAsked = 1;
 let questionsInTotal = 10;
+
+document.getElementById('total').textContent = questionsInTotal;
 
 function checkAnswer() {
     let userInput = this.textContent;
