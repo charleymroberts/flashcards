@@ -41,3 +41,19 @@ function runMultipleChoice() {
 
 runMultipleChoice();
 
+function checkAnswer() {
+    let userInput = this.textContent;
+    let rightAnswer = fourChoices[questionPair].lang1;
+    if (String(userInput) === String(rightAnswer)) {
+        alert("Yay, you got it right");
+    } else {
+        alert(`You said ${userInput}. The computer said... ${rightAnswer}.`);
+    }
+
+    runMultipleChoice()
+}
+
+let answerButtons = document.getElementsByClassName('answer-button');
+for (let ansbutton of answerButtons) {
+    ansbutton.addEventListener('click', checkAnswer);
+}
