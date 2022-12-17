@@ -67,7 +67,7 @@ function checkAnswer() {
         score += 1;
         document.getElementById('correct-answers').textContent = score;
     } else {
-        alert(`You answered ${userInput}. The correct answer is: ${rightAnswer}. Keep trying!`);
+        alert(`You answered: ${userInput}. The correct answer is: ${rightAnswer}. Keep trying!`);
     }
     questionNumber += 1;
     document.getElementById('current-question-number').textContent = questionNumber;

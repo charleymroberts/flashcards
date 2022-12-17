@@ -79,17 +79,8 @@ p {
  .nav-button {
     height: 2rem;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #000;
     margin-top: 0.5rem;
- }
-
- /* submit button next to text box on hard mode page*/
-
- #submit-arrow {
-    border-radius: 50%;
-    border: 0.5px solid black;
-    height: 1.5rem;
-    width: 1.5rem;
-    text-align: center;
  }
 
  a {
@@ -127,6 +118,6 @@ p {
 
 .answer-button:hover, #submit-arrow:hover {
     background-color: #6db8d1;
-}
+    }
 
 }

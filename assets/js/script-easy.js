@@ -80,7 +80,7 @@ function checkAnswer() {
         document.getElementById('correct-answers').textContent = score;
         alert("Yay, you got it right!");
     } else {
-        alert(`You chose ${userInput}. The correct answer is: ${rightAnswer}. Keep trying!`);
+        alert(`You chose: ${userInput}. The correct answer is: ${rightAnswer}. Keep trying!`);
     }
 
     questionsAsked += 1;
