@@ -69,6 +69,12 @@ p {
     display: inline-block;
 }
 
+/*text box for user to type in their answer on hard mode*/
+
+#user-answer {
+    font-size: 1.5rem;
+}
+
 /* buttons at bottom of game-area to select/move around the games */
 
  #nav-buttons {
