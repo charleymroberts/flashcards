@@ -60,6 +60,8 @@ p {
     margin: 0.2rem;
     font-size: 1.2rem;
     font-family: 'Secular One', 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #000;
 }
 
 #first-two-buttons, #second-two-buttons {
@@ -86,6 +88,7 @@ p {
     border: 0.5px solid black;
     height: 1.5rem;
     width: 1.5rem;
+    text-align: center;
  }
 
  a {

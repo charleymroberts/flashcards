@@ -12,7 +12,7 @@ let fruitDictionary = [
     {lang1: "plum", lang2: "la prune"},
     {lang1: "raisin", lang2: "le raisin sec"},
     {lang1: "banana", lang2: "la banane"},
-    {lang2: "pineapple", lang2: "l'ananas"}
+    {lang1: "pineapple", lang2: "l'ananas"}
 ]
 
 // displays game info to user  
@@ -87,8 +87,8 @@ function gameOver() {
     alert(`Game over! You answered ${score} questions correctly`);
     score = 0;
     document.getElementById('correct-answers').textContent = score;
-    questionsInTotal = 1;
-    document.getElementById('current-question-number').textContent = questionsInTotal;
+    questionNumber = 1;
+    document.getElementById('current-question-number').textContent = questionNumber;
     displayQuestion();
 }
 
