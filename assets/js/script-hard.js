@@ -1,3 +1,5 @@
+//array of questions and answer dictionaries
+
 let fruitDictionary = [
     {lang1: "strawberry", lang2: "la fraise"},
     {lang1: "raspberry", lang2: "la framboise"},
@@ -61,11 +63,11 @@ function checkAnswer() {
     let userInputLowerCase = userInput.toLowerCase();
     let rightAnswer = wordPair.lang1;
     if (String(userInputLowerCase) === String(rightAnswer)) {
-        alert("Yay, you got it right");
+        alert("Yay, you got it right!");
         score += 1;
         document.getElementById('correct-answers').textContent = score;
     } else {
-        alert(`You said ${userInput}. The computer said... ${rightAnswer}.`);
+        alert(`You answered ${userInput}. The correct answer is: ${rightAnswer}. Keep trying!`);
     }
     questionNumber += 1;
     document.getElementById('current-question-number').textContent = questionNumber;
@@ -83,7 +85,6 @@ function checkAnswer() {
 
 function gameOver() {
     alert(`Game over! You answered ${score} questions correctly`);
-    alert('0-3: bof, 4-6: pas mal, 7-9: tres bien, 10: magnifique!');
     score = 0;
     document.getElementById('correct-answers').textContent = score;
     questionsInTotal = 1;

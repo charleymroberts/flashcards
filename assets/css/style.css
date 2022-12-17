@@ -111,10 +111,18 @@ p {
     font-family: 'Secular One', 'Times New Roman', Times, serif; 
  }
 
- @media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     
 #game-area {
         width: 50%;
     }   
 
  }
+
+@media (pointer: fine) {
+
+.answer-button:hover, #submit-arrow:hover {
+    background-color: #6db8d1;
+}
+
+}

@@ -1,3 +1,5 @@
+//array of questions and answer dictionaries
+
 let fruitDictionary = [
     {lang1: "strawberry", lang2: "la fraise"},
     {lang1: "raspberry", lang2: "la framboise"},
@@ -76,9 +78,9 @@ function checkAnswer() {
     if (String(userInput) === String(rightAnswer)) {
         score += 1;
         document.getElementById('correct-answers').textContent = score;
-        alert("Yay, you got it right");
+        alert("Yay, you got it right!");
     } else {
-        alert(`You said ${userInput}. The computer said... ${rightAnswer}.`);
+        alert(`You chose ${userInput}. The correct answer is: ${rightAnswer}. Keep trying!`);
     }
 
     questionsAsked += 1;
