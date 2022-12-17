@@ -60,7 +60,7 @@ document.getElementById('total').textContent = questionsInTotal;
 
 function checkAnswer() {
     let userInput = document.getElementById('user-answer').value;
-    let userInputLowerCase = userInput.toLowerCase();
+    let userInputLowerCase = userInput.toLowerCase().trim();
     let rightAnswer = wordPair.lang1;
     if (String(userInputLowerCase) === String(rightAnswer)) {
         alert("Yay, you got it right!");

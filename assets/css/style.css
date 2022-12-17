@@ -40,6 +40,7 @@ p {
 
 #question-intro {
     font-style: italic;
+    margin-top: 2rem;
 }
 
 /*area for the question word chosen and displayed by the js*/
