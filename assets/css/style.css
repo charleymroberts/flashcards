@@ -73,6 +73,7 @@ p {
 
 #user-answer {
     font-size: 1.1rem;
+    max-width: 75%;
 }
 
 /* buttons at bottom of game-area to select/move around the games */
