@@ -1,4 +1,7 @@
+/* Google Fonts embed code */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@500&family=Secular+One&display=swap');
+
+/* body/#game-area main background for all games */
 
 body {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -17,6 +20,8 @@ body {
     box-shadow: 3px 3px #cdd2d4;
 }
 
+/* h1 page title/logo */
+
 h1 {
     font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
     text-align: center;
@@ -31,10 +36,20 @@ p {
     margin: 0.5rem;
 }
 
+/*the 'what x is this?' question*/
+
+#question-intro {
+    font-style: italic;
+}
+
+/*area for the question word chosen and displayed by the js*/
+
 #question-text {
     font-family: 'Secular One', 'Times New Roman', Times, serif;
     font-size: 2rem;
 }
+
+/* multiple choice buttons in easy mode */
 
 .answer-button {
     background-color: #EF6565;
@@ -42,11 +57,16 @@ p {
     height: 5rem;
     border-radius: 5%;
     border: 1px solid black;
-    display: inline-block;
     margin: 0.2rem;
     font-size: 1.2rem;
-    font-family: 'Secular One', 'Times New Roman', Times, serif; 
+    font-family: 'Secular One', 'Times New Roman', Times, serif;
 }
+
+#first-two-buttons, #second-two-buttons {
+    display: inline-block;
+}
+
+/* buttons at bottom of game-area to select/move around the games */
 
  #nav-buttons {
     margin-top: 2rem;
@@ -59,14 +79,21 @@ p {
     margin-top: 0.5rem;
  }
 
- #submit {
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+ /* submit button next to text box on hard mode page*/
+
+ #submit-arrow {
+    border-radius: 50%;
+    border: 0.5px solid black;
+    height: 1.5rem;
+    width: 1.5rem;
  }
 
  a {
     text-decoration: none;
     color: #000
  }
+
+ /* section displaying info to the user to tell them which game they're on*/
 
  #game-info { 
     text-align: left;
@@ -75,12 +102,6 @@ p {
     margin-top: 0;
  }
 
- #submit {
-    border-radius: 50%;
-    border: 0.5px solid black;
-    height: 1.5rem;
-    width: 1.5rem;
- }
 
 #score-area {
     margin-top: 2rem;
@@ -90,14 +111,7 @@ p {
     font-family: 'Secular One', 'Times New Roman', Times, serif; 
  }
 
- /* @media screen and (min-width: 800px) {
-    body {
-        background-image: url('../../assets/images/france-flag.jpeg');
-        background-size: cover;
-    }
- } */
-  
- @media screen and (min-width: 900px) {
+ @media screen and (min-width: 1000px) {
     
 #game-area {
         width: 50%;

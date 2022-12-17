@@ -14,11 +14,12 @@
 
     <div id="game-area">
         <div id="game-info">
-            <p>Language: <span id="language"></span> ✮ Game: <span id="game-title"></span></p>
+            <p>Language: <span id="language"></span> ✮ Game: <span id="game-title"></span> 
+                ✮ Mode: <span id="game-mode"></span></p>
         </div>
 
         <div>
-            <p><em>Which fruit is this?</em></p>
+            <p id="question-intro">Which fruit is this?</p>
         </div>
     
         <div id="question-text">
@@ -29,10 +30,14 @@
         </div>
 
         <div id="answer-button-area">
-            <button class="answer-button" id="answer1"></button>
-            <button class="answer-button" id="answer2"></button>
-            <button class="answer-button" id="answer3"></button>
-            <button class="answer-button" id="answer4"></button>
+            <div id="first-two-buttons">
+                <button class="answer-button" id="answer1"></button>
+                <button class="answer-button" id="answer2"></button>
+            </div>
+            <div id="second-two-buttons">
+                <button class="answer-button" id="answer3"></button>
+                <button class="answer-button" id="answer4"></button>
+            </div>
         </div>
     
         <div id="score-area">

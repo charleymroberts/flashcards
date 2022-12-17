@@ -1,7 +1,7 @@
 let fruitDictionary = [
     {lang1: "strawberry", lang2: "la fraise"},
     {lang1: "raspberry", lang2: "la framboise"},
-    {lang1: "peach", lang2: "la peche"},
+    {lang1: "peach", lang2: "la pêche"},
     {lang1: "blueberry", lang2: "la myrtille"},
     {lang1: "apple", lang2: "la pomme"},
     {lang1: "pear", lang2: "la poire"},
@@ -9,14 +9,20 @@ let fruitDictionary = [
     {lang1: "grape", lang2: "le raisin"},
     {lang1: "plum", lang2: "la prune"},
     {lang1: "raisin", lang2: "le raisin sec"},
+    {lang1: "banana", lang2: "la banane"},
+    {lang2: "pineapple", lang2: "l'ananas"}
 ]
+
+// displays game info to user  
 
 let language = "French"
 document.getElementById('language').textContent = language;
 let gameTitle = "fruits"
 document.getElementById('game-title').textContent = gameTitle;
-// let gameMode = "hard"
-// document.getElementById('game-mode').textContent = gameMode;
+let gameMode = "hard"
+document.getElementById('game-mode').textContent = gameMode;
+
+// selects question word 
 
 let wordPair;
 let question;
@@ -28,6 +34,8 @@ function displayQuestion() {
     document.getElementById('question-text').textContent = question;
 }
 
+// event listener for user submitting an answer and to load game when page is first displayed
+
 document.addEventListener("DOMContentLoaded", function() {
      displayQuestion();
      document.getElementById('user-answer').focus();
@@ -36,9 +44,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 checkAnswer();
             }
         })
-     document.getElementById("submit").addEventListener("click", checkAnswer);
+     document.getElementById("submit-arrow").addEventListener("click", checkAnswer);
 }
 )
+
+// checks answer and increments score and number of questions asked  
 
 let score = 0;
 let questionNumber = 1;
@@ -68,6 +78,8 @@ function checkAnswer() {
 
     displayQuestion();
 }
+
+// ends game after specified number of questions have been asked and reloads the game
 
 function gameOver() {
     alert(`Game over! You answered ${score} questions correctly`);
