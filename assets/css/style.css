@@ -93,8 +93,8 @@ setting font size of over 1rem appears to stop phone browsers zooming in on the 
     margin: 0.25rem;
     padding: 0.25rem;
     border: 1px solid black;
-    border-radius: 10px;
-    max-width: 40%;
+    border-radius: 5px;
+    max-width: 45%;
     display: inline-block;
  }
 
