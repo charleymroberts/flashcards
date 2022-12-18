@@ -70,7 +70,8 @@ p {
     display: inline-block;
 }
 
-/*text box for user to type in their answer on hard mode*/
+/*text box for user to type in their answer on hard mode. 
+setting font size of over 1rem appears to stop phone browsers zooming in on the text box */
 
 #user-answer {
     font-size: 1.1rem;
@@ -86,10 +87,15 @@ p {
  }
 
  .nav-button {
-    height: 2rem;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     color: #000;
-    margin-top: 0.5rem;
+    background-color: #c7d8ff;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 40%;
+    display: inline-block;
  }
 
  a {
@@ -125,8 +131,8 @@ p {
 
 @media (pointer: fine) {
 
-.answer-button:hover, #submit-arrow:hover {
-    background-color: #6db8d1;
+.answer-button:hover {
+    background-color: #c7d8ff;
     }
 
 }
