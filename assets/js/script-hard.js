@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 checkAnswer();
             }
         });
-     document.getElementById("submit-arrow").addEventListener("click", checkAnswer);
+     document.getElementById("submit-button").addEventListener("click", checkAnswer);
 }
 );
 
