@@ -13,15 +13,15 @@ let fruitDictionary = [
     {lang1: "raisin", lang2: "le raisin sec"},
     {lang1: "banana", lang2: "la banane"},
     {lang1: "pineapple", lang2: "l'ananas"},
-]
+];
 
 // displays game info to user 
 
-let language = "French"
+let language = "French";
 document.getElementById('language').textContent = language;
-let gameTitle = "fruits"
+let gameTitle = "fruits";
 document.getElementById('game-title').textContent = gameTitle;
-let gameMode = "easy"
+let gameMode = "easy";
 document.getElementById('game-mode').textContent = gameMode;
 
 /**
@@ -90,7 +90,7 @@ function checkAnswer() {
         gameOver();
     }
 
-    runMultipleChoice()
+    runMultipleChoice();
 }
 
 //listens for the user selecting an answer
