@@ -4,15 +4,26 @@
 
 Flashcards is an interactive web-based quiz game which helps English-speaking learners of French as a foreign language to memorise vocabulary.  
 
-Users can choose between a multiple choice game ('easy mode'), where they are given a word in French and four possible English answers to choose from, or a 'hard mode' version where they are given only the French word and type their own answer in a text field. 
+The game displays a word in French, and the user's task is to enter the correct English equivalent. Users can choose between a multiple choice game ('easy mode'), where they are given a word in French and four possible English answers to choose from, or a 'hard mode' version where they are given only the French word and type their own answer in a text field. 
 
-The computer checks whether or not the user's answers are correct, keeps a tally of correct answers and the total number of questions asked, and once the user has answered 10 questions they are given their score out of 10.
+The computer checks whether or not the user's answers are correct, keeps a tally of correct answers and number of questions asked, and once the user has answered 10 questions the game finishes and they are given their score out of 10.
 
 ## Screenshots of the user interface
 
 ![flashcards screenshots](assets/images/flashcards-all-screens.png)
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
+## Features
+
+### Landing page
+
+The game begins with a landing page, where the user can select their language, select a game (i.e. choose a topic for the vocabulary), and choose whether they want to play in easy mode or hard mode.
+
+The landing page menus are not functional as such as there is currently only one language and one game to choose from, but they are in place to demonstrate how the user might choose between different languages and games once there are more options available in a future version of the game.  
+
+The 'easy mode' and 'hard mode' buttons at the bottom of the page are href links which take the user to each version of the game.
+
 
 Welcome Charley Roberts,
 
