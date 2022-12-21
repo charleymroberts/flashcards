@@ -8,9 +8,17 @@ The game displays a word in French, and the user's task is to enter the correct 
 
 The computer checks whether or not the user's answers are correct, keeps a tally of correct answers and number of questions asked, and once the user has answered 10 questions the game finishes and they are given their score out of 10.
 
+## Users of this game
+
+The game is intended as a tool to help people learning a foreign language to memorise vocabulary.  In its current form it is most likely to be helpful to beginner-to-intermediate language learners.  
+
+As it is fairly simple to play and also mobile-friendly, it lends itself to being played whenever the user has a spare few minutes to spend time looking at their phone, although it can be played equally well on a laptop or desktop computer.  
+
+It is more likely to be used by adults, or teenagers studying for exams, as the visual design is fairly simple and it does not have the kind of graphics or effects that a children's game would be likely to require to keep their interest. 
+
 ## Screenshots of the user interface
 
-![flashcards screenshots](assets/images/flashcards-all-screens.png)
+![flashcards screenshots](assets/images/game-screenshots.png)
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -23,6 +31,49 @@ The game begins with a landing page, where the user can select their language, s
 The landing page menus are not functional as such as there is currently only one language and one game to choose from, but they are in place to demonstrate how the user might choose between different languages and games once there are more options available in a future version of the game.  
 
 The 'easy mode' and 'hard mode' buttons at the bottom of the page are href links which take the user to each version of the game.
+
+![landing page screenshot](assets/images/landing-page.png) 
+
+### Easy mode
+
+The page displays a question word, chosen at random from an array of word pairs, and four possibly multiple choice answers (including the correct one!).  The user selects their answer by clicking or tapping one of the answer buttons.
+
+The score area at the bottom lets the user see how many questions they have scored correctly so far, and how many are left to go. (I chose not to include a 'wrong answers' tally as well as I felt it was more encouraging to learners just to display the number of correct ones.)
+
+After each question is answered, an alert is displayed with the text "Yay, you got it right!" for a correct answer, or "You chose (answer). The correct answer is (answer). Keep trying!" if the user's choice was incorrect.  The feedback is encouraging for the user if they get an answer right, and helps them to learn the correct answer by displaying it if their own choice was incorrect.
+
+![correct answer alert](assets/images/correct-answer-alert.png)
+
+![incorrect answer alert](assets/images/incorrect-answer-alert.png)
+
+There is also an info section in the top left hand corner to give feedback to the user about which language, game and difficulty level they are currently playing.
+
+After the user has answered 10 questions, an alert is displayed telling the user how many questions they have answered correctly. The game then resets back to the beginning. The user can either play another game, or use the navigation buttons within the game to switch to hard mode or exit the game (which takes the user back to the landing page).
+
+### Hard mode
+
+The layout and functioning of the game from the user's perspective is similar to easy mode as described above. The main difference is that instead of multiple choice buttons, the user has a text field in which to type their answer.
+
+## Design considerations
+
+### Useability:
+
+The design is kept deliberately simple so it does not distract from learning. This should also help keep it quick to load and use minimal mobile data. 
+
+It is designed to have sufficient contrast between colours and use clearly readable fonts for accessibility purposes.  Two fonts are used in the body of the game, one for the information provided by the game and the other for instructions to the user, to help navigating the game feel intuitive. 
+
+It is designed to be mobile-friendly as it is the kind of game people would play on their phone when they have a spare few minutes.  As a fairly simple design it has not needed much adaptation for different screen sizes, just one min-width media query for a couple of differences between touchscreens and desktop/laptop screens (one for how much screen width the white background to the game takes up, and another to implement the 'hover' command on screens which are being used with mouse pointers). 
+
+### Visuals:
+
+The colour scheme is based around the flag of France. (Other national flag colours of French-speaking countries could be used if the game was being marketed outside Europe, and additional colour schemes could be added as further languages are added to the game).  As the game is not specifically aimed at children it does not include extras such as pictures, moving images or sound effects.
+
+The logo font was chosen to be bold to attract the user's attention when they first arrive at the page, and distinguish it from the body of the game.  The body fonts aim to be unfussy and readable but also feel sufficiently modern.
+
+The white game area background (with a slight drop shadow) is inspired by traditional paper flashcards which would have one language on one side and the other language on the other side, and the two-directional arrows in the logo are to signify turning the flashcard over to check the answer.
+
+The background was created using a site called Trianglify, which aims to enable users to create website backgrounds that are more appealing than just a plain colour without needing access to specially created images.
+
 
 
 Welcome Charley Roberts,
