@@ -1,3 +1,17 @@
+# Flashcards
+
+## About the game
+
+Flashcards is an interactive web-based quiz game which helps English-speaking learners of French as a foreign language to memorise vocabulary.  
+
+Users can choose between a multiple choice game ('easy mode'), where they are given a word in French and four possible English answers to choose from, or a 'hard mode' version where they are given only the French word and type their own answer in a text field. 
+
+The computer checks whether or not the user's answers are correct, keeps a tally of correct answers and the total number of questions asked, and once the user has answered 10 questions they are given their score out of 10.
+
+## Screenshots of the user interface
+
+![flashcards screenshots](assets/images/flashcards-all-screens.png)
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Charley Roberts,
