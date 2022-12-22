@@ -22,11 +22,11 @@ It is more likely to be used by adults, or teenagers studying for exams, as the 
 
 ![flashcards screenshots](assets/images/game-screenshots.png)
 
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 ## Features
 
 ### Landing page
+
+![landing page](assets/images/landing-page.png)
 
 The game begins with a landing page, where the user can select their language, select a game (i.e. choose a topic for the vocabulary), and choose whether they want to play in easy mode or hard mode.
 
@@ -34,31 +34,44 @@ The landing page menus are not functional as such as there is currently only one
 
 The 'easy mode' and 'hard mode' buttons at the bottom of the page are href links which take the user to each version of the game.
 
-![landing page screenshot](assets/images/landing-page.png) 
-
 ### Easy mode
+
+![easy mode screenshot](assets/images/easy-mode.png)
+
+**Question and answer area**
 
 The page displays a question word, chosen at random from an array of word pairs, and four possibly multiple choice answers (including the correct one!).  The user selects their answer by clicking or tapping one of the answer buttons.
 
+**Score area**
+
 The score area at the bottom lets the user see how many questions they have scored correctly so far, and how many are left to go. (I chose not to include a 'wrong answers' tally as well as I felt it was more encouraging to learners just to display the number of correct ones.)
 
-After each question is answered, an alert is displayed with the text "Yay, you got it right!" for a correct answer, or "You chose (answer). The correct answer is (answer). Keep trying!" if the user's choice was incorrect.  The feedback is encouraging for the user if they get an answer right, and helps them to learn the correct answer by displaying it if their own choice was incorrect.
-
-![correct answer alert](assets/images/correct-answer-alert.png)
-
-![incorrect answer alert](assets/images/incorrect-answer-alert.png)
+**Game info section**
 
 There is also an info section in the top left hand corner to give feedback to the user about which language, game and difficulty level they are currently playing.
 
+**Alerts for correct and incorrect answer feedback**
+
+After each question is answered, an alert is displayed with the text "Yay, you got it right!" for a correct answer, or "You chose (answer). The correct answer is (answer). Keep trying!" if the user's choice was incorrect.  The feedback is encouraging for the user if they get an answer right, and helps them to learn the correct answer by displaying it if their own choice was incorrect.
+
+![correct answer alert](assets/images/right-answer.png)
+![incorrect answer alert](assets/images/wrong-answer.png)
+
+**Game over alert**
+
 After the user has answered 10 questions, an alert is displayed telling the user how many questions they have answered correctly. The game then resets back to the beginning. The user can either play another game, or use the navigation buttons within the game to switch to hard mode or exit the game (which takes the user back to the landing page).
+
+![game over alert](assets/images/game-over.png)
 
 ### Hard mode
 
 The layout and functioning of the game from the user's perspective is similar to easy mode as described above. The main difference is that instead of multiple choice buttons, the user has a text field in which to type their answer.
 
+![hard mode screenshot](assets/images/hard-mode.png)
+
 ## Design considerations
 
-### Useability:
+### Useability
 
 The design is kept deliberately simple so it does not distract from learning. This should also help keep it quick to load and use minimal mobile data. 
 
@@ -66,7 +79,7 @@ It is designed to have sufficient contrast between colours and use clearly reada
 
 It is designed to be mobile-friendly as it is the kind of game people would play on their phone when they have a spare few minutes.  As a fairly simple design it has not needed much adaptation for different screen sizes, just one min-width media query for a couple of differences between touchscreens and desktop/laptop screens (one for how much screen width the white background to the game takes up, and another to implement the 'hover' command on screens which are being used with mouse pointers). 
 
-### Visuals:
+### Visual design
 
 The colour scheme is based around the flag of France. (Other national flag colours of French-speaking countries could be used if the game was being marketed outside Europe, and additional colour schemes could be added as further languages are added to the game).  As the game is not specifically aimed at children it does not include extras such as pictures, moving images or sound effects.
 
@@ -96,9 +109,9 @@ I put each page of the game through the <a href="https://validator.w3.org/">W3C 
 |               | W3C CSS validator  | 'No Error Found' | 
 |               | Lighthouse         | 100% for accessibility |
 |               |                    |           |
-| hardmode.html | W3C HTML validator |           |  (didn't like aria labels on i element)
-|               | W3C CSS validator  |  'No Error Found' | 
-|               | Lighthouse         |           |
+| hardmode.html | W3C HTML validator | 'No errors or warnings to show' |
+|               | W3C CSS validator  | 'No Error Found' | 
+|               | Lighthouse         | 100% for accessibility |
 |               |                    |           |
 | easymode.html | W3C HTML validator | 'No errors or warnings to show' |
 |               | W3C CSS validator  | 'No Error Found' | 
@@ -115,11 +128,18 @@ I put each page of the game through the <a href="https://validator.w3.org/">W3C 
 
 The game was developed in Gitpod and deployed to GitHub Pages. The process for doing this is:
 
+- On the GitHub page for the project, go to the 'Settings' menu
+- Go to the 'Pages' section
+- Under 'Build and deployment > Branch', select 'main'
+- Click 'Save'
+
 ## Bugs
 
 ### Fixed bugs
 
 I noticed that phones automatically add a space at the end of a word if the user selects the word using autocomplete, which was making the game return incorrect answers in hard mode as the strings were no longer an exact match. I added a `.trim()` method to the user input in the JavaScript to fix the problem by removing any white space from the end of words.  I had already added a `.toLowerCase()` method so the game did not return an incorrect answer if the user (or their phone's autocomplete) included any capital letters in their answer. 
+
+When I added a `hover` class to the multiple choice buttons to change their background colour while the user's mouse pointer was over them, I found that this led to the buttons on touchscreens being displayed in the hover background colour after the question had been answered and when the next question was displayed.  To get around this problem I put the `hover` class inside a media query of `pointer: fine`, which only applies it on devices being operated with a mouse. 
 
 ### Unfixed bugs
 
