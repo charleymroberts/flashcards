@@ -74,6 +74,84 @@ The white game area background (with a slight drop shadow) is inspired by tradit
 
 The background was created using a site called Trianglify, which aims to enable users to create website backgrounds that are more appealing than just a plain colour without needing access to specially created images.
 
+## Technologies used
+
+The game is written using JavaScript, displayed using HTML and styled with CSS.
+
+I chose to take a modular approach to the JavaScript, with separate files for the two versions of the game, as the majority of the code was different for the two games.  I decided keeping the code separate would be clearer and easier to maintain in future, rather than having to spend time identifying which pieces of code within the same file belonged to which game.  I then decided to have the array of word pairs as a separate file, which would also make it much simpler to add further arrays and languages to future versions of the game.
+
+## Testing undertaken
+
+I reguarly checked the functioning and design of the game throughout its development. I used the DevTools checker for various sizes of phone and tablet screens to check the responsiveness of the design during initial stages of development, and checked the functioning and design again on actual phones and tablets once it was deployed to GitHub Pages.  The design is tested down to a width of 320px (e.g. smaller phone screens).
+
+### Checkers used and results
+
+I put each page of the game through the <a href="https://validator.w3.org/">W3C HTML validator</a>, the <a href="https://jigsaw.w3.org/css-validator/">W3C Jigsaw CSS validator</a> and Lighthouse within Chrome Devtools, and the JavaScript files into the <a href="https://jshint.com/">JShint JavaScript checker</a>.  
+
+| Page/file     |   Checker         |  Result   |
+|---------------|-------------------|-----------|
+| index.html    | HTML validator    | No issues |
+|               | CSS validator     |           | 
+|               |                   |           |
+|               |                   |           |
+|               |                   |           |
+|               |                   |           |
+|               |                   |           |
+
+
+index.html      HTML validator      
+                CSS validator
+                Lighthouse
+
+hardmode.html   HTML validator
+                CSS validator
+                Lighthouse
+
+easymode.html   HTML validator
+                CSS validator
+                Lighthouse
+
+script-hard.js  JShint
+
+script-easy.js  JShint
+
+## Bugs
+
+### Fixed bugs
+
+I noticed that phones automatically add a space at the end of a word if the user selects the word using autocomplete, which was making the game return incorrect answers in hard mode as the strings were no longer an exact match. I added a `.trim()` method to the user input in the JavaScript to fix the problem by removing any white space from the end of words.  I had already added a `.toLowerCase()` method so the game did not return an incorrect answer if the user (or their phone's autocomplete) included any capital letters in their answer. 
+
+### Unfixed bugs
+
+At the end of the game, when the alert displays the number of questions the user answers correctly, the counter of correct answers on the page itself does not add the last answer, e.g. if the user answers 10 questions correctly, the alert says they answered 10 correctly but the counter on the page stays at 9.  Presumably this is because the alert is triggered earlier in the code before the counter has chance to increment by one.  
+
+## Coding decisions(/features I could have added but decided not to)
+
+## Ideas for future development
+
+The game is still in its early stages in terms of the amount of vocabulary and number of different languages it could offer. 
+
+Future development could involve:
+- adding more vocabulary covering different topics
+- adding more language pairs
+- adding the option to flip languages to have the questions in English and the answers in the other language
+- adding some graphics to reinforce learning, e.g. an image of the fruit displayed with the correct answer
+
+Making English the question language would involve creating some additional features in hard mode, such as a way of enabling the user to easily add accented characters or umlauts, and deciding how to score the answer if the user enters the correct word but gets its gender wrong. This could involve adding a way of checking the definite article (e.g. 'le' or 'la') separately from the word and giving the user half a point if they entered the correct word but the incorrect gender, or deciding that the entire answer would count as incorrect in that case.
+
+## Credits
+
+Background image created using <a href="http://trianglify.io" target="_blank">Trianglify.io</a>
+
+Fonts from <a href="http://fonts.google.com" target="_blank">Google Fonts </a>
+
+Submit icon from <a href="http://www.fontawesome.com" target="_blank">fontawesome</a>
+
+<a href="http://www.collinsdictionary.com" target="_blank">Collins Dictionary</a> used to check spellings and genders of French words
+
+
+
+
 
 
 Welcome Charley Roberts,
