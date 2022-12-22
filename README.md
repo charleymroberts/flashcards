@@ -8,6 +8,8 @@ The game displays a word in French, and the user's task is to enter the correct 
 
 The computer checks whether or not the user's answers are correct, keeps a tally of correct answers and number of questions asked, and once the user has answered 10 questions the game finishes and they are given their score out of 10.
 
+The game is live at <a href="https://charleymroberts.github.io/flashcards/index.html">https://charleymroberts.github.io/flashcards/index.html</a>
+
 ## Users of this game
 
 The game is intended as a tool to help people learning a foreign language to memorise vocabulary.  In its current form it is most likely to be helpful to beginner-to-intermediate language learners.  
@@ -88,32 +90,30 @@ I reguarly checked the functioning and design of the game throughout its develop
 
 I put each page of the game through the <a href="https://validator.w3.org/">W3C HTML validator</a>, the <a href="https://jigsaw.w3.org/css-validator/">W3C Jigsaw CSS validator</a> and Lighthouse within Chrome Devtools, and the JavaScript files into the <a href="https://jshint.com/">JShint JavaScript checker</a>.  
 
-| Page/file     |   Checker         |  Result   |
-|---------------|-------------------|-----------|
-| index.html    | HTML validator    | No issues |
-|               | CSS validator     |           | 
-|               |                   |           |
-|               |                   |           |
-|               |                   |           |
-|               |                   |           |
-|               |                   |           |
+| Page          |   Checker          |  Result   |
+|---------------|------------------- |-----------|
+| index.html    | W3C HTML validator | 'No errors or warnings to show' |
+|               | W3C CSS validator  | 'No Error Found' | 
+|               | Lighthouse         | 100% for accessibility |
+|               |                    |           |
+| hardmode.html | W3C HTML validator |           |  (didn't like aria labels on i element)
+|               | W3C CSS validator  |  'No Error Found' | 
+|               | Lighthouse         |           |
+|               |                    |           |
+| easymode.html | W3C HTML validator | 'No errors or warnings to show' |
+|               | W3C CSS validator  | 'No Error Found' | 
+|               | Lighthouse         | 100% for accessibility |
 
+| File           | Checker  | Result             |
+|----------------|----------|--------------------|
+| script-hard.js | JShint   | no warnings shown* |    
+| script.easy.js | JShint   | no warning shown*  |    
 
-index.html      HTML validator      
-                CSS validator
-                Lighthouse
+*once JShint configured to 'Assume: New JavaScript Features (ES6)'  
 
-hardmode.html   HTML validator
-                CSS validator
-                Lighthouse
+## Deployment
 
-easymode.html   HTML validator
-                CSS validator
-                Lighthouse
-
-script-hard.js  JShint
-
-script-easy.js  JShint
+The game was developed in Gitpod and deployed to GitHub Pages. The process for doing this is:
 
 ## Bugs
 
@@ -125,7 +125,7 @@ I noticed that phones automatically add a space at the end of a word if the user
 
 At the end of the game, when the alert displays the number of questions the user answers correctly, the counter of correct answers on the page itself does not add the last answer, e.g. if the user answers 10 questions correctly, the alert says they answered 10 correctly but the counter on the page stays at 9.  Presumably this is because the alert is triggered earlier in the code before the counter has chance to increment by one.  
 
-## Coding decisions(/features I could have added but decided not to)
+## Coding decisions(/features I could have added but decided not to in this release)
 
 ## Ideas for future development
 
