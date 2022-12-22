@@ -1,3 +1,5 @@
+//array of word pairs used for questions and answers
+
 let fruitDictionary = [
     {lang1: "strawberry", lang2: "la fraise"},
     {lang1: "raspberry", lang2: "la framboise"},
