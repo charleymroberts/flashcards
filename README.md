@@ -173,6 +173,4 @@ Background image created using <a href="http://trianglify.io" target="_blank">Tr
 
 Fonts from <a href="http://fonts.google.com" target="_blank">Google Fonts </a>
 
-Submit icon from <a href="http://www.fontawesome.com" target="_blank">fontawesome</a>
-
 <a href="http://www.collinsdictionary.com" target="_blank">Collins Dictionary</a> used to check spellings and genders of French words
