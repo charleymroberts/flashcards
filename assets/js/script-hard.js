@@ -49,6 +49,8 @@ function checkAnswer() {
         alert("Yay, you got it right!");
         score += 1;
         document.getElementById('correct-answers').textContent = score;
+    } else if (userInput === "") {
+        alert(`You did not enter an answer. The correct answer is: ${rightAnswer}.`)
     } else {
         alert(`You answered: ${userInput}. The correct answer is: ${rightAnswer}. Keep trying!`);
     }

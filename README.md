@@ -161,11 +161,11 @@ Making English the question language would involve creating some additional feat
 
 **Requiring an input in the text field for hard mode
 
-Not requiring content to be entered in the text box allows the user to easily skip onto the next question if they don't know the answer.
+I chose not to require content to be entered in the text box, as this allows the user to easily skip onto the next question if they don't know the answer (by pressing Enter or using the submit button).  Instead I added an additional alert to be shown if the submitted user input has no content, with the text, "You did not enter an answer. The correct answer is `${rightAnswer}`." 
 
 **Preventing the game from displaying the same question more than once
 
-I considered implementing this, but decided that answering the same question more than once actually helps reinforce the correct answer in the user's memory, particularly if they answered the question incorrectly the first time but got it right the second time.
+I considered implementing this feature, but decided that having the user answer the same question more than once actually helps reinforce the correct answer in their memory and therefore contributes to the purpose of the game, particularly if the user answered the question incorrectly the first time but got it right the second time.
 
 ## Credits
 
