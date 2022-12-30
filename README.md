@@ -10,6 +10,8 @@ The computer checks whether or not the user's answers are correct, keeps a tally
 
 The game is live at <a href="https://charleymroberts.github.io/flashcards/index.html">https://charleymroberts.github.io/flashcards/index.html</a>
 
+Currently the app only offers the French language and a relatively small range of vocabulary, however more languages and games can easily be added to the game for future releases.
+
 ## Users of this game
 
 The game is intended as a tool to help people learning a foreign language to memorise vocabulary.  In its current form it is most likely to be helpful to beginner-to-intermediate language learners.  
