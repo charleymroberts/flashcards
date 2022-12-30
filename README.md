@@ -73,7 +73,7 @@ The layout and functioning of the game from the user's perspective is similar to
 
 ## Design considerations
 
-### Useability
+### Usability
 
 The design is kept deliberately simple so it does not distract from learning. This should also help keep it quick to load and use minimal mobile data. 
 
@@ -83,7 +83,7 @@ It is designed to be mobile-friendly as it is the kind of game people would play
 
 ### Visual design
 
-The colour scheme is based around the flag of France. (Other national flag colours of French-speaking countries could be used if the game was being marketed outside Europe, and additional colour schemes could be added as further languages are added to the game).  As the game is not specifically aimed at children it does not include extras such as pictures, moving images or sound effects.
+The colour scheme is based around the flag of France. (Other national flag colours of French-speaking countries could be used if the game was being marketed outside Europe, and additional colour schemes could be added as further languages are added to the game.) As the game is not specifically aimed at children it does not include extras such as pictures, moving images or sound effects.
 
 The logo font was chosen to be bold to attract the user's attention when they first arrive at the page, and distinguish it from the body of the game.  The body fonts aim to be unfussy and readable but also feel sufficiently modern.
 
@@ -99,7 +99,7 @@ I chose to take a modular approach to the JavaScript, with separate files for th
 
 ## Testing undertaken
 
-I reguarly checked the functioning and design of the game throughout its development. I used the DevTools checker for various sizes of phone and tablet screens to check the responsiveness of the design during initial stages of development, and checked the functioning and design again on actual phones and tablets once it was deployed to GitHub Pages.  The design is tested down to a width of 320px (e.g. smaller phone screens).
+I regularly checked the functioning and design of the game throughout its development. I used the DevTools checker for various sizes of phone and tablet screens to check the responsiveness of the design during initial stages of development, and checked the functioning and design again on actual phones and tablets once it was deployed to GitHub Pages.  The design is tested down to a width of 320px (e.g. smaller phone screens).
 
 ### Checkers used and results
 
